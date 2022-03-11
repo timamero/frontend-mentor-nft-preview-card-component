@@ -26,6 +26,10 @@ body {
   font-family: 'Outfit', sans-serif;
 }
 
+a {
+  color: hsl(0, 0%, 100%);
+}
+
 .card {
   background-color: hsl(216, 50%, 16%);
   width: 335px;
@@ -64,14 +68,38 @@ body {
 }
 
 .card__price {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-column-gap: 8px;
+  align-items: center;
+  width: max-content;
   color: hsl(178, 100%, 50%);
   font-weight: 600;
 }
 
 .card__countdown {
   justify-self: end;
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-column-gap: 8px;
+  align-items: center;
+  width: max-content;
 }
 
 .card__footer {
   padding: 14px 0;
+}
+
+.card__user {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-column-gap: 16px;
+  align-items: center;
+  width: max-content;
+}
+
+.card__user img {
+  height: 30px;
+  border-radius: 30px;
+  border: 1px solid hsl(0, 0%, 100%);
 }
