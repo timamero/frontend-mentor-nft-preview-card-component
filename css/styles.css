@@ -47,6 +47,11 @@ a {
   height: 95vh;
 }
 
+.grid-col {
+  display: grid;
+  grid-template-columns: auto auto;
+}
+
 .card {
   background-color: hsl(216, 50%, 16%);
   width: 335px;
@@ -55,18 +60,13 @@ a {
   border-radius: var(--borderRadius);
 }
 
-.card__image img {
-  width: 100%;
-  border-radius: var(--borderRadius);
+.card > * {
+  padding-bottom: 14px;
 }
 
-.card__main {
-  display: grid;
-  grid-template-rows: auto;
-  grid-row-gap: 14px;
-  padding: 14px 0;
-  border-bottom: 1px solid hsl(215, 51%, 70%);
-  font-size: 18px;
+.card__image {
+  width: 100%;
+  border-radius: var(--borderRadius);
 }
 
 .card__title {
@@ -79,38 +79,30 @@ a {
   font-weight: 300;
 }
 
-.card__data {
-  display: grid;
-  grid-template-columns: auto auto;
-  font-size: 16px;
-}
-
 .card__price {
-  display: grid;
-  grid-template-columns: auto auto;
   grid-column-gap: 8px;
   align-items: center;
   width: max-content;
   color: hsl(178, 100%, 50%);
   font-weight: 600;
+  font-size: 16px;
+
 }
 
 .card__countdown {
   justify-self: end;
-  display: grid;
-  grid-template-columns: auto auto;
   grid-column-gap: 8px;
   align-items: center;
   width: max-content;
+  font-size: 16px;
 }
 
-.card__footer {
-  padding: 14px 0;
+.card__divider {
+  width: 100%;
+  border-top: 1px solid hsl(215, 32%, 27%);
 }
 
 .card__user {
-  display: grid;
-  grid-template-columns: auto auto;
   grid-column-gap: 16px;
   align-items: center;
   width: max-content;
