@@ -160,7 +160,7 @@ a {
   color: var(--cyan);
 }
 
-.card__user:hover a {
+.card__user a:hover {
   cursor: pointer;
   color: var(--cyan);
 }
